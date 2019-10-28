@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001;
 
 mongoose.Promise = global.Promise;
 
-const mongodbAPI = process.env.PORT;
+const mongodbAPI = process.env.mongourl;
 const app = express();
 app.use(cors());
 app.use(require("morgan")("dev"));
